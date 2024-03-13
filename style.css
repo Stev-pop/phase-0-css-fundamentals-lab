@@ -2,4 +2,75 @@ body {
   width: 100%;
   height: 100%;
   margin: 0;
+  
+}
+
+header, figcaption{
+  text-align: center;
+}
+
+nav a {
+  background-color: lightskyblue;
+  padding: 0 10px;
+
+}
+img{
+  width: 900px;
+}
+
+/*Image and caption styling*/
+figure {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-size: 14px;
+}
+
+/*footer css*/
+
+#details { 
+  text-align: center;
+  background-color: red;
+  display:flex;
+  justify-content: space-around;
+  gap: 2px;
+
+}
+
+section > div{
+  width:25%;
+  font-size: 12px;
+}
+
+/*body text area styling*/
+
+section > p {
+  width:  800px;
+  margin: 10px auto;
+  text-align: center;
+
+}
+
+
+/*GRID STYLING*/
+
+header{
+  grid-area: header;
+}
+
+#featured-property {
+  grid-area: property;
+}
+
+#details{
+  grid-area: footer;
+}
+
+.parent-container {
+  display: grid;
+  grid-template-areas: 
+  "header header header"
+  "property property property"
+  "footer footer footer";
 }
